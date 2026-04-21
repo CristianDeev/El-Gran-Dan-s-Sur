@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Gran Danés Sur · Centro Veterinario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img id="lightboxImg" src="" alt=""/>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <span class="paw">🐾</span>
+      El Gran Danés Sur
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#info">Horarios</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="tel:3208751807" class="nav-cta">📞 Llamar</a></li>
+    </ul>
+    <button class="nav-burger" id="navBurger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#info">Horarios</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="tel:3208751807">📞 Llamar · 320 875 1807</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-badge">⭐ 4.6 de calificación · Cali, Valle del Cauca</div>
+      <h1 class="hero-title">
+        El cuidado que<br/>tu mascota<br/><em>merece.</em>
+      </h1>
+      <p class="hero-subtitle">
+        Centro Veterinario El Gran Danés Sur — donde cada animal es tratado con amor, experiencia y dedicación genuina desde el corazón de Cali.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/573208751807?text=Hola%2C%20quiero%20agendar%20una%20cita%20para%20mi%20mascota%20%F0%9F%90%BE" target="_blank" class="btn-primary">💬 Agendar cita</a>
+        <a href="#servicios" class="btn-outline">Ver servicios</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4.6</span>
+          <span class="stat-label">Calificación</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">128+</span>
+          <span class="stat-label">Reseñas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">6d</span>
+          <span class="stat-label">Atención semanal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-mosaic">
+        <div class="mosaic-img"><img src="assets/17.webp" alt="Fachada"/></div>
+        <div class="mosaic-img"><img src="assets/19.webp" alt="Local"/></div>
+        <div class="mosaic-img"><img src="assets/3.webp"  alt="Tienda"/></div>
+        <div class="mosaic-img"><img src="assets/11.webp" alt="Atención"/></div>
+        <div class="mosaic-img"><img src="assets/8.webp"  alt="Paciente"/></div>
+        <div class="mosaic-img"><img src="assets/13.webp" alt="Gato"/></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="float-badge">
+        <span class="rating-num">4.6</span>
+        <span class="stars">★★★★★</span>
+        <div class="badge-sep"></div>
+        <span class="reviews">128 reseñas en Google</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="dot">✦</span> Consulta General</span>
+      <span class="marquee-item"><span class="dot">✦</span> Vacunación</span>
+      <span class="marquee-item"><span class="dot">✦</span> Cirugía</span>
+      <span class="marquee-item"><span class="dot">✦</span> Desparasitación</span>
+      <span class="marquee-item"><span class="dot">✦</span> Tienda de Mascotas</span>
+      <span class="marquee-item"><span class="dot">✦</span> Grooming</span>
+      <span class="marquee-item"><span class="dot">✦</span> Laboratorio</span>
+      <span class="marquee-item"><span class="dot">✦</span> Rayos X</span>
+      <span class="marquee-item"><span class="dot">✦</span> Consulta General</span>
+      <span class="marquee-item"><span class="dot">✦</span> Vacunación</span>
+      <span class="marquee-item"><span class="dot">✦</span> Cirugía</span>
+      <span class="marquee-item"><span class="dot">✦</span> Desparasitación</span>
+      <span class="marquee-item"><span class="dot">✦</span> Tienda de Mascotas</span>
+      <span class="marquee-item"><span class="dot">✦</span> Grooming</span>
+      <span class="marquee-item"><span class="dot">✦</span> Laboratorio</span>
+      <span class="marquee-item"><span class="dot">✦</span> Rayos X</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="servicios" style="scroll-margin-top:80px;">
+    <div id="services">
+      <div class="section-head reveal">
+        <span class="section-label">¿Qué ofrecemos?</span>
+        <h2 class="section-title">Servicios <em>integrales</em><br/>para tu mascota</h2>
+        <p class="section-sub">Atención profesional con el más alto estándar de calidad veterinaria</p>
+        <div class="divider"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🩺</div>
+          <h3 class="service-name">Consulta Veterinaria</h3>
+          <p class="service-desc">Atención médica completa con diagnóstico preciso y tratamiento personalizado para cada paciente.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">💉</div>
+          <h3 class="service-name">Vacunación y Prevención</h3>
+          <p class="service-desc">Esquemas de vacunación actualizados para proteger a tu compañero frente a enfermedades.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🔬</div>
+          <h3 class="service-name">Laboratorio Clínico</h3>
+          <p class="service-desc">Exámenes de sangre, orina y más con resultados rápidos para un diagnóstico oportuno.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🏥</div>
+          <h3 class="service-name">Cirugía</h3>
+          <p class="service-desc">Procedimientos quirúrgicos en instalaciones modernas con estrictos protocolos de seguridad.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🛁</div>
+          <h3 class="service-name">Grooming & Estética</h3>
+          <p class="service-desc">Baño, corte, limpieza de oídos y uñas. Tu mascota sale lista para brillar.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🛍️</div>
+          <h3 class="service-name">Tienda de Mascotas</h3>
+          <p class="service-desc">Alimentos premium, accesorios y juguetes. Todo lo que necesitas en un solo lugar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galeria" style="scroll-margin-top:80px;">
+    <div class="gallery-wrap">
+      <div class="section-head reveal">
+        <span class="section-label">Nuestra familia</span>
+        <h2 class="section-title">Momentos que <em>nos llenan</em></h2>
+        <p class="section-sub">Cada mascota tiene una historia. Aquí van algunas de las nuestras.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item" data-src="assets/2.webp"><img src="assets/2.webp"  alt="Pata de mascota"/><div class="gallery-overlay"><span>Nuestros pacientes</span></div></div>
+        <div class="gallery-item" data-src="assets/4.webp"><img src="assets/4.webp"  alt="Veterinario"/><div class="gallery-overlay"><span>Nuestro equipo</span></div></div>
+        <div class="gallery-item" data-src="assets/5.webp"><img src="assets/5.webp"  alt="Revisión dental"/><div class="gallery-overlay"><span>Revisión completa</span></div></div>
+        <div class="gallery-item" data-src="assets/6.webp"><img src="assets/6.webp"  alt="Local"/><div class="gallery-overlay"><span>Nuestro local</span></div></div>
+        <div class="gallery-item" data-src="assets/7.webp"><img src="assets/7.webp"  alt="Tienda"/><div class="gallery-overlay"><span>Tienda</span></div></div>
+        <div class="gallery-item" data-src="assets/8.webp"><img src="assets/8.webp"  alt="Chihuahua"/><div class="gallery-overlay"><span>Paciente feliz</span></div></div>
+        <div class="gallery-item" data-src="assets/9.webp"><img src="assets/9.webp"  alt="Cachorro"/><div class="gallery-overlay"><span>Recién llegados</span></div></div>
+        <div class="gallery-item" data-src="assets/10.webp"><img src="assets/10.webp" alt="Entrada"/><div class="gallery-overlay"><span>Bienvenidos</span></div></div>
+        <div class="gallery-item" data-src="assets/12.webp"><img src="assets/12.webp" alt="GrandVita"/><div class="gallery-overlay"><span>Productos premium</span></div></div>
+        <div class="gallery-item" data-src="assets/13.webp"><img src="assets/13.webp" alt="Gato"/><div class="gallery-overlay"><span>También felinos</span></div></div>
+        <div class="gallery-item" data-src="assets/14.webp"><img src="assets/14.webp" alt="Accesorios"/><div class="gallery-overlay"><span>Juguetes y accesorios</span></div></div>
+        <div class="gallery-item" data-src="assets/15.webp"><img src="assets/15.webp" alt="Cachorro pequeño"/><div class="gallery-overlay"><span>Los más pequeños</span></div></div>
+        <div class="gallery-item" data-src="assets/16.webp"><img src="assets/16.webp" alt="Pata bebé"/><div class="gallery-overlay"><span>Cuidado neonatal</span></div></div>
+        <div class="gallery-item" data-src="assets/17.webp"><img src="assets/17.webp" alt="Fachada exterior"/><div class="gallery-overlay"><span>Encuéntranos</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section id="info" style="scroll-margin-top:80px;">
+    <div class="info-content">
+      <div class="section-head" style="text-align:left;">
+        <span class="section-label">Estamos aquí</span>
+        <h2 class="section-title info-title">Horarios y <em>contacto</em></h2>
+        <p class="section-sub info-sub">Visítanos de lunes a domingo en el sur de Cali</p>
+        <div class="divider info-divider"></div>
+      </div>
+      <table class="hours-table">
+        <tbody>
+          <tr data-day="1"><td>Lunes</td><td>8 a.m. – 5 p.m.</td></tr>
+          <tr data-day="2"><td>Martes</td><td>8 a.m. – 5 p.m.</td></tr>
+          <tr data-day="3"><td>Miércoles</td><td>8 a.m. – 5 p.m.</td></tr>
+          <tr data-day="4"><td>Jueves</td><td>8 a.m. – 5 p.m.</td></tr>
+          <tr data-day="5"><td>Viernes</td><td>8 a.m. – 5 p.m.</td></tr>
+          <tr data-day="6"><td>Sábado</td><td>8 a.m. – 5 p.m.</td></tr>
+          <tr data-day="0"><td>Domingo</td><td>8 a.m. – 12 p.m.</td></tr>
+        </tbody>
+      </table>
+      <div class="contact-chips">
+        <a href="tel:3208751807" class="chip"><span class="chip-icon">📞</span> 320 875 1807</a>
+        <a href="https://maps.google.com/?q=Cl.4+%2395-35,+Cali" target="_blank" class="chip"><span class="chip-icon">📍</span> Cl. 4 #95-35, Horizonte</a>
+        <a href="https://wa.me/573208751807" target="_blank" class="chip"><span class="chip-icon">💬</span> WhatsApp</a>
+      </div>
+    </div>
+    <div class="map-container reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.6541234567!2d-76.5472!3d3.3897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f0b2e0c123%3A0xabc!2sCl.+4+%2395-35%2C+Cali%2C+Valle+del+Cauca!5e0!3m2!1ses!2sco!4v1700000000000"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="opiniones" style="scroll-margin-top:80px;">
+    <div class="section-head reveal">
+      <span class="section-label">Lo que dicen</span>
+      <h2 class="section-title">Opiniones de <em>nuestros clientes</em></h2>
+      <p class="section-sub">128 reseñas en Google · Promedio 4.6 estrellas</p>
+      <div class="divider"></div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Excelente atención, los veterinarios son muy profesionales y cariñosos con los animales. Mi perrita salió de allí mucho mejor."</p>
+        <p class="review-author">María P.</p>
+        <p class="review-date">Hace 2 semanas · Google</p>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Muy buena atención, precios justos y el personal muy amable. Lo recomiendo ampliamente a todos los que tienen mascotas en el sur de Cali."</p>
+        <p class="review-author">Carlos R.</p>
+        <p class="review-date">Hace 1 mes · Google</p>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">"Buena clínica, tienen de todo en la tienda y el veterinario fue muy claro con el diagnóstico. Volvería sin dudarlo."</p>
+        <p class="review-author">Sandra L.</p>
+        <p class="review-date">Hace 3 semanas · Google</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-text">
+      <h2>¿Tu mascota necesita atención?</h2>
+      <p>Llámanos o visítanos hoy mismo. Estamos en el sur de Cali, listos para ayudarte.</p>
+    </div>
+    <a href="tel:3208751807" class="btn-white">📞 Llamar ahora · 320 875 1807</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-about">
+        <div class="footer-brand">🐾 El Gran Danés Sur</div>
+        <p class="footer-desc">Centro Veterinario especializado en el cuidado integral de tus mascotas. Ubicados en el sur de Cali con atención de lunes a domingo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#">Consulta Veterinaria</a></li>
+          <li><a href="#">Vacunación</a></li>
+          <li><a href="#">Cirugía</a></li>
+          <li><a href="#">Grooming</a></li>
+          <li><a href="#">Laboratorio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:3208751807">320 875 1807</a></li>
+          <li><a href="#">Cl. 4 #95-35, Horizonte</a></li>
+          <li><a href="#">Cali, Valle del Cauca</a></li>
+          <li><a href="https://wa.me/573208751807">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Centro Veterinario El Gran Danés Sur · Cali, Colombia</span>
+      <div class="footer-rating">
+        ★★★★★ <span class="footer-rating-sub">4.6 en Google (128 reseñas)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
